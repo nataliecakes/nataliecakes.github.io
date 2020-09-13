@@ -45,7 +45,7 @@ public class MainServlet extends HttpServlet {
 
 		String cake = request.getParameter("user_cake");
 		request.setAttribute("cake", cake);
-		request.getRequestDispatcher("input.htmlS").forward(request, response);
+		request.getRequestDispatcher("input.html").forward(request, response);
 
 
 	}
