@@ -1,0 +1,177 @@
+.inSec{
+    background: rgba(0,0,0,0.85) center;
+
+}
+.outSec{
+    color:white;
+    text-align:center;
+}
+.logo_name{
+    font-family: 'Pacifico', cursive;
+    color: #e83e8c;
+    font-size:25px;
+}
+.logo{
+    padding-top: 10px;
+}
+.big{
+    padding-top: 0px;
+
+    padding-bottom: 10px;
+}
+.main_title{
+    font-size:55px;
+    line-height:2em;
+    padding-top:10px;
+    font-weight:700;
+}
+.fillings_title, .product_title, .contact_title, .ordering{
+    text-align: center;
+    font-size:45px;
+    line-height:2em;
+    padding-top:10px;
+    font-weight:300;
+}
+.contact_info{
+    font-size: 16px;
+    color: #e83e8c;
+    font-family:cursive;
+    font-weight: 500;
+    padding-bottom: 10px;
+    padding-top: 5px;
+}
+.write{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #e83e8c;
+}
+.plain_text{
+    font-size:23px;
+    line-height:2em;
+    font-weight:300;
+    color: #ffffff;
+}
+.myItem{
+    font-size:23px;
+    padding-left:30px;
+    line-height:1.8em;
+    font-weight:300;
+    color:#000000;
+}
+.myItem:hover{
+    text-decoration:none;
+    color:#e83e8c;
+
+}
+
+.fill_text{
+    height: auto;
+    padding: 10px;
+    margin: 20px;
+    font-size:23px;
+    line-height: 1.5em;
+    font-weight:300 ;
+    background: rgba(255, 255, 255, 0.8);
+    color:#000000;
+    text-align: center;
+}
+.fill_title, .cakeName{
+    font-family: 'Pacifico', cursive;
+    font-weight:500 ;
+    font-size:23px;
+    text-align: center;
+}
+.orderBtn, .form_btn{
+    background-color: #ffffff;
+    text-transform:uppercase;
+    color: #e83e8c;
+    font-size: 20px;
+    font-weight:700;
+    padding: 10px;
+    width: 100%;
+    border-radius:15px ;
+    border:3px solid #e83e8c;
+    margin-top: 0px;
+    margin-bottom: 60px;
+}
+.orderBtn:hover,.form_btn:hover{
+    background-color: #e83e8c;
+    color: #ffffff;
+}
+.fillPhoto{
+    margin: 10px;
+    width: 100%;
+    height: 350px;
+}
+
+.wrap{
+    width: 100%;
+    height: 400px;
+}
+
+.wrap:hover .hover {
+    display: block;
+
+}
+
+#aboutCake{
+    font-size:30px;
+}
+
+.form_input {
+    background: #d2d2d2;
+    width:100%;
+    font-size: 18px;
+    padding-top: 10px;
+    padding-bottom:10px ;
+    border-radius:5px;
+    border:3px solid #e83e8c;
+    border:0;
+    padding-left:24px;
+    outline:none;
+    margin:5px;
+}
+.form_input:focus{
+    border:1px solid #29B0D9;
+}
+.contact_text{
+    font-size:18px;
+    line-height:1.5em;
+    margin-left:15px;
+    margin-top:15px;
+}
+.photo{
+	width: 73%;
+	height: 390px;
+}
+.area{
+	height:50%;
+}
+
+@media screen and (max-width:992px) {
+    .logo {
+        visibility: hidden;
+
+    }
+    .fillPhoto{
+        width: 60%;
+        height: 300px;
+        margin-left:100px ;
+
+    }
+    .smallMenu{
+        position: fixed;
+    }
+    .wrap{
+        width: 87%;
+        margin-left:28px ;
+    }
+	.photo{
+		width: 73%;
+		height: 390px;
+}    
+	.area{
+	height:25%;
+	}
+
+}
