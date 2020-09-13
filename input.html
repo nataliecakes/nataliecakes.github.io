@@ -25,8 +25,10 @@
         window.addEventListener("load", scriptPhoto, false);
         function scriptPhoto(){
         	var info = window.localStorage.getItem("fotoId");
+        	var info2=window.localStorage.getItem("cake_name");
         	document.getElementById("output").style.background=info
-            
+        	document.getElementById("user_cake").value=info2;
+
 
         }
 
@@ -110,7 +112,7 @@
         <input type="email" name="user_email" class="form_input" placeholder="Email" required>
 			</div>
 		<div class="col-lg-6">
-                <input type="text" class="form_input" value="${cake}" required>
+                <input type="text" class="form_input" id="user_cake" required>
 
                 <label class="contact_text">Начинка:</label>
 

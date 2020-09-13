@@ -160,15 +160,17 @@
                     <input type="submit" class="orderBtn" value="Заказать" id="btn1"></div>
                 <script type="text/javascript"> btn1.onclick = function () {
                     var info = document.getElementById("cake1");
+                    var info2=document.getElementById("user_cake");
 
                     window.localStorage.setItem("fotoId", info.style.background );
+                    window.localStorage.setItem("cake_name", info2.value);
 
                 }</script>
-                <input name="user_cake" value="Торт 'Груша'" type="hidden">
+                <input id="user_cake" value="Торт 'Груша'" type="hidden">
                 </form>
             </div>
             <div class="col-lg-4 col-md-6">
-                <form action="MainServlet" method="get">
+                <form action="input.html" method="get">
 
                     <div class="wrap" id="cake2" style="background: url(img/торты/7.2.jpg) no-repeat">
                         </div>
@@ -189,7 +191,7 @@
                 </form>
             </div>
             <div class="col-lg-4 col-md-6">
-                <form action="MainServlet" method="get">
+                <form action="input.html" method="get">
 
                     <div class="wrap" id="cake3" style="background: url(img/торты/6.2.jpg) no-repeat">
                         </div>
