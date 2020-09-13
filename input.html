@@ -37,36 +37,7 @@
 
     </script>
     
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-               
-               <script>
-          
-               
-               $('#cakeButton').click(function() {
-            	   $.ajax({
-            		   type: 'POST',
-             	      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
-             	      data: {
-             	        'key': 'YOUR API KEY HERE',
-             	        'message': {
-             	          'from_email': 'areserved65@gmail.com',
-             	          'to': [
-             	              {
-             	                'email': 'nastiagr1603@gmail.com',
-             	                'name': 'Nastya (OPTIONAL)',
-             	                'type': 'to'
-             	              }
-             	            ],
-             	          'autotext': 'true',
-             	          'subject': 'Заказ на торт',
-             	          'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
-             	        }
-             	      }
-             	     }).done(function(response) {
-             	       console.log(response);
-             	       });
-            	 });
-               </script>         
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>        
     
 </head>
 <body>
@@ -165,6 +136,32 @@
 			</div>
 		<div class="col-lg-12">
 		        <button type="submit" class="orderBtn" id="cakeButton">Отправить</button>
+		        <script> document.getElementById("cakeButton").onclick = function () {
+		        	$.ajax({
+	            		   type: 'POST',
+	             	      url: 'https://mandrillapp.com/api/1.0/messages/send.json',
+	             	      data: {
+	             	        'key': 'YOUR API KEY HERE',
+	             	        'message': {
+	             	          'from_email': 'areserved65@gmail.com',
+	             	          'to': [
+	             	              {
+	             	                'email': 'nastiagr1603@gmail.com',
+	             	                'name': 'Nastya (OPTIONAL)',
+	             	                'type': 'to'
+	             	              }
+	             	            ],
+	             	          'autotext': 'true',
+	             	          'subject': 'Заказ на торт',
+	             	          'html': 'YOUR EMAIL CONTENT HERE! YOU CAN USE HTML!'
+	             	        }
+	             	      }
+	             	     }).done(function(response) {
+	             	       console.log(response);
+	             	       });
+		        	
+		        }
+		        </script>
         
         </div>
             </div></div>
