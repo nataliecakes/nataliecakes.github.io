@@ -183,9 +183,10 @@
 
                         document.getElementById("btn2").onclick = function () {
                             var info = document.getElementById("cake2");
+                            var info2=document.getElementById("user_cake");
 
-                            window.localStorage.setItem("fotoId",info.style.background );
-
+                            window.localStorage.setItem("fotoId", info.style.background );
+                            window.localStorage.setItem("cake_name", info2.value);
                         } </script>
                     <input name="user_cake" value="Торт 'Паруса'" type="hidden">
                 </form>
@@ -205,15 +206,17 @@
                         document.getElementById("btn3").onclick = function () {
                             var info = document.getElementById("cake3");
 
-                            window.localStorage.setItem("fotoId",info.style.background );
+                            var info2=document.getElementById("user_cake");
 
+                            window.localStorage.setItem("fotoId", info.style.background );
+                            window.localStorage.setItem("cake_name", info2.value);
                         }</script>
                     <input name="user_cake" value="Торт 'Детство'" type="hidden">
                 </form>
             </div>
        
             <div class="col-lg-4 col-md-6">
-                <form action="MainServlet" method="get">
+                <form action="input.html" method="get">
 
                 <div class="wrap" id="cake4" style="background: url(img/торты/5.2.jpg) no-repeat">
                    </div>
@@ -228,14 +231,16 @@
                         document.getElementById("btn4").onclick = function () {
                             var info = document.getElementById("cake4");
 
-                            window.localStorage.setItem("fotoId",info.style.background );
+                            var info2=document.getElementById("user_cake");
 
+                            window.localStorage.setItem("fotoId", info.style.background );
+                            window.localStorage.setItem("cake_name", info2.value);
                         }</script>
                     <input name="user_cake" value="Торт 'Дары леса'" type="hidden">
                 </form>
             </div>
             <div class="col-lg-4 col-md-6">
-            <form action="MainServlet" method="get">
+            <form action="input.html" method="get">
 
             <div class="wrap" id="cake5" style="background: url(img/торты/3.2.jpg) no-repeat">
               </div>
@@ -249,15 +254,17 @@
                     document.getElementById("btn5").onclick = function () {
                         var info = document.getElementById("cake5");
 
-                        window.localStorage.setItem("fotoId",info.style.background );
+                        var info2=document.getElementById("user_cake");
 
+                        window.localStorage.setItem("fotoId", info.style.background );
+                        window.localStorage.setItem("cake_name", info2.value);
                     }
                 </script>
                 <input name="user_cake" value="Торт 'Гранат'" type="hidden">
             </form>
             </div>
               <div class="col-lg-4 col-md-6">
-                  <form action="MainServlet" method="get">
+                  <form action="input.html" method="get">
 
                   <div class="wrap" id="cake6" style="background: url(img/торты/4.2.jpg) no-repeat"></div>
                         <div class="cakeName">
@@ -271,8 +278,10 @@
                     document.getElementById("btn6").onclick = function () {
                         var info = document.getElementById("cake6");
 
-                        window.localStorage.setItem("fotoId",info.style.background );
+                        var info2=document.getElementById("user_cake");
 
+                        window.localStorage.setItem("fotoId", info.style.background );
+                        window.localStorage.setItem("cake_name", info2.value);
                     }
 
                 </script>
